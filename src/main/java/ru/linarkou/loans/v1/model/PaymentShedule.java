@@ -9,12 +9,12 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Credit {
+public class PaymentShedule {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
-    private long limit;
-    private double procentRate;
-    private long bankId;
-    private long creditOfferId;
+    private long paymentSum;
+    private long repaymentCreditSum;
+    private long repaymentPercentageSum;
+
 }
